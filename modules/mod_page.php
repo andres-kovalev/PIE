@@ -3,7 +3,7 @@
   $items = Array(
 	'home.html'		=>	'Главная',
 	'docs.html'		=>	'Документация',
-	'{{download}}'	=>	'Скачать'
+	'{{download}}'		=>	'Скачать'
   );
 
   $parse = Array(
