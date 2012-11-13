@@ -4,5 +4,5 @@
 	'templates'	=>	'templates/',
 	'images'	=>	'images/'
   ));
-  PIE::data('home', '/PIE/home.html');
+  PIE::data('home', '/home.html');
 ?>

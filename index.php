@@ -7,8 +7,8 @@
   PIE::autoinclude('autoload/');
   PIE::template(PIE::data('dirs.templates'));
 
-  PIE::route('/\/PIE\/(home|docs)\.html/', PIE::data('dirs.modules').'mod_page.php');
-  PIE::route('/\/PIE\/asserts\/([a-z]+)\.(css|js)/', PIE::data('dirs.modules').'mod_static.php');
+  PIE::route('/\/(home|docs)\.html$/', PIE::data('dirs.modules').'mod_page.php');
+  PIE::route('/\/asserts\/([a-z]+)\.(css|js)$/', PIE::data('dirs.modules').'mod_static.php');
   PIE::route('/.*/', Array('init.php', function(){
 	PIE::reroute(PIE::data('home'));
   }));
