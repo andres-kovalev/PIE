@@ -436,6 +436,17 @@ foreach($data as $value)
       <pre class="prettyprint linenums">
 echo PIE::parses($template, $data);
 </pre>
+      <p>Последний метод шаблонизатора - это <code>display</code>. Он является оберткой над <code>parse</code>. Его задача вывести обработанный шаблон и завершить выполнение сценария (<code>exit</code>). Он также принимает дополнительный входной параметр <code>$content_type</code>, который будет автоматически подставлен в соответствующий заголовок ответа сервера.</p>
+      <pre class="prettyprint linenums">
+// так, например, может выглядеть сценарий вывода статических страниц
+// для маршрута PIE::route('/\/asserts\/([a-z]+)\.(css|js)/', 'static.php');
+$type = PIE::data('PARAMS.2');
+$file = PIE::data('PARAMS.1');
+if (PIE::exists($template = "$type/$file"))
+  PIE::display(PIE::get($template), NULL, $type);
+PIE::reroute(PIE::data('home'));
+</pre>
+      <p>Для самых распространенных типов (<code>html</code>, <code>css</code> и <code>js</code>) содержимого можно передавать сокращение (как это сделано в примере). По умолчанию передается тип <code>html</code></p>
       <div class="alert">
        <strong>Внимание.</strong> Модуль шаблонизатора требует обязательного наличия метода <strong>mbstring</strong>, описанного в <a href="#mbstring">соответствующем разделе</a>.
       </div>

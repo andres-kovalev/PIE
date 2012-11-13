@@ -11,8 +11,8 @@
 	header("Location: /pie-1.0b.zip");
 	exit;
   });
-  PIE::route('/\/(home|docs)\/?/', PIE::data('dirs.modules').'mod_page.php');
-  PIE::route('/\/(css|js)\/([a-z]+)\/?/', PIE::data('dirs.modules').'mod_static.php');
+  PIE::route('/\/(home|docs)\.html/', PIE::data('dirs.modules').'mod_page.php');
+  PIE::route('/\/asserts\/([a-z]+)\.(css|js)/', PIE::data('dirs.modules').'mod_static.php');
   PIE::route('/.*/', Array('init.php', function(){
 	PIE::reroute(PIE::data('home'));
   }));

@@ -3,15 +3,15 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>{{title}}</title>
-  <link rel='stylesheet' href='{{root_dir}}css/bootstrap' type='text/css'/>
-  <link rel='stylesheet' href='{{root_dir}}css/styles' type='text/css'/>
+  <link rel='stylesheet' href='{{root_dir}}asserts/bootstrap.css' type='text/css'/>
+  <link rel='stylesheet' href='{{root_dir}}asserts/styles.css' type='text/css'/>
   <!--[if lt IE 9]>
    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="{{root_dir}}js/prettify"></script>
-  <script type="text/javascript" src="{{root_dir}}js/jquery"></script>
-  <script type="text/javascript" src="{{root_dir}}js/bootstrap"></script>
-  <script type="text/javascript" src="{{root_dir}}js/scripts"></script>
+  <script type="text/javascript" src="{{root_dir}}asserts/prettify.js"></script>
+  <script type="text/javascript" src="{{root_dir}}asserts/jquery.js"></script>
+  <script type="text/javascript" src="{{root_dir}}asserts/bootstrap.js"></script>
+  <script type="text/javascript" src="{{root_dir}}asserts/scripts.js"></script>
  </head>
  <body data-spy="scroll" data-target="#scrollspy-menu">
   <a id='top'></a>

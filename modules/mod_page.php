@@ -1,9 +1,9 @@
 <?
-  $page = PIE::data('PARAMS.1');
+  $page = PIE::append('PARAMS.1', '.html');
   $items = Array(
-	'home'		=>	'Главная',
-	'docs'		=>	'Документация',
-	'download'	=>	'Скачать'
+	'home.html'		=>	'Главная',
+	'docs.html'		=>	'Документация',
+	'{{download}}'	=>	'Скачать'
   );
 
   $parse = Array(
@@ -16,9 +16,7 @@
 						'title'	=>	$title
 					);
 				}, array_keys($items), array_values($items))),
-	'subtitle'	=>	$items[$page],
-	'info'		=>	PIE::get("{$page}_info"),
-	'data'		=>	PIE::get("{$page}_data")
+	'data'		=>	PIE::get("{$page}")
   );
 
   PIE::display(PIE::get('main'), $parse);

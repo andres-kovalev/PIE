@@ -46,7 +46,8 @@
 					    case 'js':
 					      $content_type = 'text/javascript';
 					      break;
-					    default:
+					    case 'html':
+					    case '':
 					      $content_type = 'text/html';
 					      break;
 					  }
