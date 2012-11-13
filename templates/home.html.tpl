@@ -3,7 +3,7 @@
     <h1>Ease As PIE</h1>
     <h2>Очень простой и быстрый расширяемый фреймворк.</h2>
     <p>Что еще тут сказать? Просто <a href="{{root_dir}}docs.html">изучайте</a> и <a href="{{root_dir}}{{download}}">пробуйте</a> на здоровье.</p>
-    <p><a href="{{root_dir}}download" class="btn btn-info btn-large"">Скачать {PIE::*} 1.0 beta</a></p>
+    <p><a href="{{root_dir}}{{download}}" class="btn btn-info btn-large"">Скачать {PIE::*} 1.0 beta</a></p>
     <ul class="masthead-links">
      <li><a href="http://github.com/chuckie/PIE" target="_blank">Исходники</a></li>
      <li><a href="http://github.com/chuckie/PIE/issues?state=open" target="_blank">Вопросы</a></li>

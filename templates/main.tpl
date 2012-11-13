@@ -38,7 +38,7 @@
     <p>Данный программный продукт распространяется под лицензией <a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html" target="_blank">GNU General Public License (GPLv3)</a>.</p>
     <p>Сайт разработан с использованием технологии <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>.</p>
     <ul class="footer-links">
-     <li><a href="http://chuckie.github.com/PIE">Эта страница</a></li>
+     <li><a href="http://chuckie.github.com/PIE/">Эта страница</a></li>
      <li class="muted">&middot;</li>
      <li><a href="http://github.com/chuckie/PIE" target="_blank">Исходники</a></li>
      <li class="muted">&middot;</li>

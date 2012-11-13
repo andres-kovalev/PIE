@@ -1,5 +1,5 @@
 <?
-  $site_root = '/';
+  $site_root = '/PIE/';
 
   PIE::data('TEMPLATE.DEFAULTS', Array(
 	'root_dir'	=>	$site_root,
