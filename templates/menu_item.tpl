@@ -1,1 +1,1 @@
-       <li{{class}}><a href='{{root_dir}}{{href}}'>{{title}}</a></li>
+       <li{{class}}><a href='{{href}}'>{{title}}</a></li>

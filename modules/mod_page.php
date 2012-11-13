@@ -11,8 +11,8 @@
 	'menu_title'	=>	'{PIE::*}',
 	'menu_items'	=>	PIE::parses(PIE::get('menu_item'), array_map(function($link, $title) {
 					return Array(
-						'class'	=>	$link == PIE::data('PARAMS.1') ? ' class="active"' : '',
-						'href'	=>	$link,
+						'class'	=>	$link == $page ? ' class="active"' : '',
+						'href'	=>	($link == '{{download}}' ? '' : '{{root_dir}}').$link,
 						'title'	=>	$title
 					);
 				}, array_keys($items), array_values($items))),
