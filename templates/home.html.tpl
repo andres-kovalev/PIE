@@ -1,6 +1,6 @@
   <div class="home">
    <div class="container">
-    <h1>Ease As PIE</h1>
+    <h1>Easy As PIE</h1>
     <h2>Очень простой и быстрый расширяемый фреймворк.</h2>
     <p>Что еще тут сказать? Просто <a href="{{root_dir}}docs.html">изучайте</a> и <a href="{{download}}">пробуйте</a> на здоровье.</p>
     <p><a href="{{download}}" class="btn btn-info btn-large"">Скачать {PIE::*} 1.0 beta</a></p>
